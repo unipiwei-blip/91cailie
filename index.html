@@ -248,6 +248,21 @@ html[data-theme="light"] .course-days{background:rgba(16,18,38,.6)}
 .partner:hover{transform:translateY(-3px);border-color:rgba(6,182,212,.5)}
 .partner-note{text-align:center;color:var(--muted);font-size:13.5px;margin-top:24px}
 
+/* ============ 实训情景展示 ============ */
+.scene-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
+.scene-card{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);
+  background:var(--surface);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  transition:transform var(--dur) var(--ease),border-color var(--dur) ease,box-shadow var(--dur) ease}
+.scene-card:hover{transform:translateY(-6px);border-color:rgba(124,58,237,.55);box-shadow:0 18px 46px -18px rgba(124,58,237,.4)}
+.scene-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+.scene-cap{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 16px 17px;
+  text-align:center;font-weight:600;font-size:14.5px;white-space:nowrap}
+.scene-cap .dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--pink));flex:none}
+@media (max-width:760px){
+  .scene-grid{grid-template-columns:1fr;gap:16px}
+  .scene-cap{white-space:normal;font-size:13.5px;padding:12px 14px 14px}
+}
+
 /* ============ 评价轮播 ============ */
 .carousel{position:relative;max-width:none;margin:0 auto;overflow:hidden;border-radius:var(--radius)}
 .car-track{display:flex;transition:transform var(--dur-slow) var(--ease);cursor:grab}
@@ -585,6 +600,35 @@ footer{border-top:1px solid var(--border);padding:64px 0 32px;background:color-m
         <span class="partner">阿里巴巴</span><span class="partner">字节跳动</span><span class="partner">小米</span><span class="partner">大疆</span><span class="partner">中国平安</span><span class="partner">中软国际</span><span class="partner">软通动力</span><span class="partner">招商集团</span>
       </div>
       <p class="partner-note">以上为长期人才输送合作企业代表，另有腾讯、启业智聘、深圳伯乐猎头等生态伙伴。</p>
+    </div>
+  </section>
+
+  <!-- 实训情景展示 -->
+  <section class="section" id="scenes">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">实训现场</span>
+        <h2>实训情景展示</h2>
+        <p class="one-line">走进真实课堂：每一节课都在项目实操中完成，学员的成长看得见。</p>
+      </div>
+      <div class="scene-grid">
+        <figure class="scene-card reveal">
+          <img class="scene-img" src="assets/img/scene-aigc.jpg" alt="AIGC 短视频剪辑实训课堂" loading="lazy">
+          <figcaption class="scene-cap"><span class="dot"></span>AIGC 短视频剪辑实训课堂</figcaption>
+        </figure>
+        <figure class="scene-card reveal" style="--d:80ms">
+          <img class="scene-img" src="assets/img/scene-code.jpg" alt="AI 大数据编程实训课堂" loading="lazy">
+          <figcaption class="scene-cap"><span class="dot"></span>AI 大数据编程实训课堂</figcaption>
+        </figure>
+        <figure class="scene-card reveal" style="--d:160ms">
+          <img class="scene-img" src="assets/img/scene-design.jpg" alt="AIGC 商业视觉设计实训课堂" loading="lazy">
+          <figcaption class="scene-cap"><span class="dot"></span>AIGC 商业视觉设计实训课堂</figcaption>
+        </figure>
+        <figure class="scene-card reveal" style="--d:240ms">
+          <img class="scene-img" src="assets/img/scene-event.jpg" alt="才猎-星途 AI 轻创主题沙龙合影" loading="lazy">
+          <figcaption class="scene-cap"><span class="dot"></span>才猎-星途 AI 轻创主题沙龙</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
