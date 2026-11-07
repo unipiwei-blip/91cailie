@@ -291,7 +291,8 @@ html[data-theme="light"] .course-days{background:rgba(16,18,38,.6)}
 
 /* ============ 页脚 ============ */
 footer{border-top:1px solid var(--border);padding:64px 0 32px;background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(14px)}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px}
+.foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.foot-col{text-align:center}
 @media (max-width:960px){.foot-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){
   .foot-grid{grid-template-columns:1fr 1fr;gap:24px}
@@ -304,7 +305,7 @@ footer{border-top:1px solid var(--border);padding:64px 0 32px;background:color-m
 .foot-col a,.foot-col p{display:block;font-size:13.8px;color:var(--muted);margin-bottom:10px;white-space:nowrap}
 .foot-col a:hover{color:var(--text)}
 .foot-col a .icon{width:14px;height:14px;margin-right:6px;color:var(--cyan);vertical-align:-.2em}
-.foot-brand img{height:48px;margin-bottom:14px}
+.foot-brand img{height:48px;margin:0 auto 14px}
 .foot-brand p{white-space:normal}
 .qr-card{display:inline-block;background:#fff;padding:12px;border-radius:16px;line-height:0;box-shadow:var(--shadow-2)}
 .qr-card img{width:132px;height:132px}
