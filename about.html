@@ -421,8 +421,11 @@ footer{border-top:1px solid var(--border);padding:64px 0 32px;background:color-m
 .fee-band b{display:block;font-family:var(--font-mono);font-size:clamp(34px,5vw,52px);font-weight:700;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .fee-band span{font-size:14px;color:var(--muted)}
-.prose{max-width:720px;margin:0 auto;text-align:center;color:var(--muted);font-size:15.5px;display:flex;flex-direction:column;gap:16px}
+.prose{max-width:780px;margin:0 auto;text-align:center;color:var(--muted);font-size:16px;line-height:2.05;letter-spacing:.3px;display:flex;flex-direction:column;gap:26px}
 .prose strong{color:var(--text)}
+/* 四保服务：四张卡片 2×2 居中 */
+#assure .feat-grid{grid-template-columns:repeat(2,1fr);max-width:920px;margin:44px auto 0}
+@media (max-width:640px){#assure .feat-grid{grid-template-columns:1fr}}
 .img-band{max-width:880px;margin:0 auto;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border-strong);box-shadow:var(--shadow-2)}
 .img-band img{width:100%;aspect-ratio:3/2;object-fit:cover}
 @media (max-width:640px){.page-hero{padding-top:120px}.cmp-table th,.cmp-table td{padding:12px 10px;font-size:13px}}
