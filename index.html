@@ -88,7 +88,7 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{text-wrap:balance}
 
 /* ============ 导航 ============ */
-.site-nav{position:fixed;top:0;left:0;right:0;z-index:50;
+header.site-nav{position:fixed;top:0;left:0;right:0;z-index:50;
   background:color-mix(in srgb,var(--bg) 62%,transparent);
   backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);
   border-bottom:1px solid var(--border);
@@ -383,17 +383,17 @@ footer{border-top:1px solid var(--border);padding:64px 0 32px;background:color-m
 @media (max-width:1020px){
   .burger{display:grid}
   .nav-actions{margin-left:auto}
-  .nav-links{position:fixed;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;
-    padding:14px 20px 22px;background:color-mix(in srgb,var(--bg) 97%,transparent);
-    backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);
-    border-bottom:1px solid var(--border-strong);box-shadow:var(--shadow-3);
+  .nav-links{position:fixed;top:76px;left:14px;right:14px;flex-direction:column;align-items:stretch;gap:6px;
+    padding:10px 14px 14px;background:var(--bg);background:color-mix(in srgb,var(--bg) 94%,var(--text));
+    border:1px solid var(--border-strong);border-radius:16px;box-shadow:var(--shadow-3);
     transform:translateY(-12px);opacity:0;pointer-events:none;
     transition:transform var(--dur-base) var(--ease),opacity var(--dur-base) ease}
   .nav-links.open{transform:none;opacity:1;pointer-events:auto}
-  .nav-links a{padding:15px 18px;font-size:16.5px;font-weight:600;color:var(--text);opacity:.85;
-    border-radius:var(--radius-sm)}
+  .nav-links a{padding:14px 16px;font-size:16.5px;font-weight:600;color:var(--text);
+    background:var(--surface);background:color-mix(in srgb,var(--text) 7%,var(--bg));
+    border:1px solid var(--border);border-radius:12px}
   .nav-links a:hover{opacity:1}
-  .nav-links a.active{opacity:1;background:var(--grad-soft);border:1px solid rgba(124,58,237,.4)}
+  .nav-links a.active{background:var(--grad-soft);border-color:rgba(124,58,237,.45)}
 }
 @media (max-width:640px){
   .hero{padding-top:88px}
@@ -768,7 +768,7 @@ footer{border-top:1px solid var(--border);padding:64px 0 32px;background:color-m
     </div>
     <div class="footer-tech">
       <span>网站技术服务支持：</span>
-      <a href="https://www.gdiis.com.cn/" target="_blank" rel="noopener">GDIIS · 创享互联</a>
+      <a href="http://www.gdiis.com/" target="_blank" rel="noopener">GDIIS · 创享互联</a>
     </div>
     <div class="footer-bottom">
       © 2026 深圳才猎天下大数据 · AI 大数据基地　版权所有　|　总部：深圳 · 分部：广州 / 北京 / 珠海 / 杭州
