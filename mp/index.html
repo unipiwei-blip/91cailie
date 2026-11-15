@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>李俊伟 · 深圳才猎天下人力资源服务有限公司</title>
+<meta name="description" content="李俊伟，深圳才猎天下人力资源服务有限公司创始人兼总经理。猎头起家，先有岗位再育人才，做 AI 人才实训与就业。">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="李俊伟·才猎天下创始人兼总经理">
+<meta property="og:description" content="猎头起家，先有岗位再育人才，AI人才实训就业基地">
+<meta property="og:image" content="https://www.91cailie.com/mp/assets/avatar.png">
+<meta name="theme-color" content="#0A0B1A">
+<style>
+  :root{
+    --bg:#0A0B1A;
+    --bg-soft:#101226;
+    --surface:rgba(255,255,255,.05);
+    --surface-hover:rgba(255,255,255,.08);
+    --border:rgba(255,255,255,.10);
+    --border-soft:rgba(255,255,255,.06);
+    --text:#F8FAFC;
+    --muted:#A6B0C3;
+    --muted-2:rgba(166,176,195,.62);
+    --violet:#7C3AED;
+    --pink:#EC4899;
+    --cyan:#06B6D4;
+    --grad:linear-gradient(120deg,#7C3AED 0%,#EC4899 100%);
+    --radius:20px;
+    --radius-sm:12px;
+    --pill:999px;
+    --shadow-2:0 8px 28px rgba(3,4,16,.45);
+    --shadow-3:0 24px 64px rgba(3,4,16,.55);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0;background:var(--bg)}
+  body{
+    color:var(--text);
+    font-family:"Inter","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    font-size:15px;line-height:1.78;
+    -webkit-font-smoothing:antialiased;
+    background:
+      radial-gradient(120% 58% at 10% -8%,rgba(124,58,237,.32),transparent 60%),
+      radial-gradient(110% 52% at 92% 3%,rgba(236,72,153,.20),transparent 62%),
+      radial-gradient(90% 45% at 50% 96%,rgba(6,182,212,.14),transparent 65%),
+      linear-gradient(180deg,var(--bg),var(--bg-soft) 60%,var(--bg));
+    background-attachment:fixed;
+    padding-bottom:calc(76px + env(safe-area-inset-bottom));
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:26px 16px 0}
+
+  /* ---------- 头部 ---------- */
+  .hero{text-align:center;padding:8px 0 4px}
+  .avatar{
+    width:104px;height:104px;border-radius:22px;object-fit:cover;display:inline-block;
+    border:1px solid var(--border-strong, rgba(255,255,255,.18));
+    box-shadow:0 18px 40px -18px rgba(124,58,237,.55),0 0 0 6px rgba(255,255,255,.04);
+  }
+  .name{
+    font-size:29px;font-weight:700;letter-spacing:4px;margin:18px 0 10px;line-height:1.2;
+    background:linear-gradient(120deg,#fff 20%,#E9D5FF 70%,#FBCFE8 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .role{
+    display:inline-block;font-size:13px;letter-spacing:2px;color:#E9D5FF;
+    padding:4px 16px;border-radius:var(--pill);
+    border:1px solid rgba(124,58,237,.45);background:rgba(124,58,237,.16);text-align:center;
+  }
+  .org{display:block;text-align:center;text-indent:0;font-size:17px;font-weight:600;letter-spacing:1.2px;margin:14px 0 0;color:var(--text)}
+  .org-en{display:block;text-align:center;text-indent:0;font-size:10.5px;letter-spacing:2px;color:var(--muted-2);margin:7px 0 0}
+
+  /* ---------- 联系方式 ---------- */
+  .contact{
+    margin-top:22px;border-radius:var(--radius);overflow:hidden;
+    background:var(--surface);border:1px solid var(--border);
+    box-shadow:var(--shadow-2);backdrop-filter:blur(14px);
+  }
+  .row{
+    display:flex;align-items:center;gap:12px;padding:14px 18px;
+    border-bottom:1px solid var(--border-soft);color:var(--text);text-decoration:none;transition:background .18s;
+  }
+  .row:last-child{border-bottom:0}
+  .row:active{background:var(--surface-hover)}
+  .ico{
+    width:34px;height:34px;border-radius:10px;flex:0 0 auto;display:grid;place-items:center;
+    background:rgba(124,58,237,.16);border:1px solid rgba(124,58,237,.30);
+  }
+  .ico svg{width:17px;height:17px;fill:none;stroke:#DDD6FE;stroke-width:1.6}
+  .row .label{font-size:12.5px;color:var(--muted-2);letter-spacing:.6px;display:block;line-height:1.4}
+  .row .value{font-size:14.5px;color:var(--text);letter-spacing:.3px;display:block;line-height:1.5;word-break:break-all}
+  .row .arrow{margin-left:auto;color:rgba(255,255,255,.28);font-size:15px}
+
+  /* ---------- 卡片 ---------- */
+  .card{
+    margin-top:16px;border-radius:var(--radius);padding:22px 20px;
+    background:var(--surface);border:1px solid var(--border);
+    box-shadow:var(--shadow-2);backdrop-filter:blur(14px);
+  }
+  h2{
+    font-size:16px;font-weight:700;letter-spacing:2.5px;margin:0 0 16px;
+    display:flex;align-items:center;gap:10px;color:var(--text);
+  }
+  h2::before{content:"";width:3px;height:14px;border-radius:2px;background:var(--grad)}
+  p{margin:0 0 13px;text-align:justify;text-indent:2em;color:var(--muted);font-size:14.5px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--text);font-weight:600}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .tag{
+    font-size:12.5px;letter-spacing:.6px;padding:5px 13px;border-radius:var(--pill);
+    color:#E9D5FF;background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.32);
+  }
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+  .stat{text-align:center;padding:12px 4px;border-radius:14px;background:var(--surface);border:1px solid var(--border-soft)}
+  .stat b{display:block;font-size:17px;letter-spacing:.3px;
+    background:linear-gradient(120deg,#C4B5FD,#F9A8D4);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{font-size:11px;color:var(--muted-2);letter-spacing:.3px}
+
+  .figure{margin:0 0 6px}
+  .figure img{width:100%;border-radius:14px;display:block;border:1px solid var(--border-soft)}
+  .cap{font-size:12px;color:var(--muted-2);margin:9px 0 0;line-height:1.6;letter-spacing:.3px;text-align:center;text-indent:0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;align-items:start}
+  .grid .figure img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center}
+
+  .pillar{border-radius:14px;padding:14px 16px;margin-top:10px;
+    background:rgba(255,255,255,.035);border:1px solid var(--border-soft)}
+  .pillar h3{margin:0 0 5px;font-size:13.5px;letter-spacing:1.2px;color:#DDD6FE;font-weight:600}
+  .pillar p{margin:0;font-size:13px;color:var(--muted-2);line-height:1.65;text-indent:2em}
+
+  .services{display:grid;gap:8px;margin-top:16px}
+  .service{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--muted);
+    padding:10px 14px;border-radius:11px;background:rgba(255,255,255,.035);border:1px solid var(--border-soft)}
+  .service i{width:5px;height:5px;border-radius:50%;flex:0 0 auto;font-style:normal;background:var(--grad)}
+
+  .note{
+    margin-top:16px;padding:13px 15px;border-radius:12px;font-size:13px;line-height:1.72;
+    color:#CBD5E1;background:rgba(6,182,212,.10);border:1px solid rgba(6,182,212,.24);
+  }
+
+  /* ---------- 底部 ---------- */
+  .bottom{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;
+    padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+    background:rgba(10,11,26,.86);backdrop-filter:blur(16px);border-top:1px solid var(--border);
+  }
+  .btn{flex:1;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;gap:8px;
+    text-decoration:none;font-size:15px;letter-spacing:1px}
+  .btn svg{width:17px;height:17px;fill:none;stroke-width:1.7;stroke:currentColor}
+  .btn-ghost{color:var(--text);border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05)}
+  .btn-main{color:#fff;background:var(--grad);box-shadow:0 14px 30px -14px rgba(236,72,153,.6)}
+
+  .foot{text-align:center;color:rgba(255,255,255,.30);font-size:11.5px;letter-spacing:.8px;padding:14px 0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <img class="avatar" src="assets/avatar.png" alt="李俊伟">
+    <h1 class="name">李俊伟</h1>
+    <div><span class="role">创始人兼总经理</span></div>
+    <p class="org">深圳才猎天下人力资源服务有限公司</p>
+    <p class="org-en">CAILIE TIANXIA · SHENZHEN</p>
+  </header>
+
+  <nav class="contact">
+    <a class="row" href="https://www.91cailie.com/" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.6 3 15 0 18M12 3c-3 3.6-3 15 0 18"/></svg></span>
+      <span>
+        <span class="label">官方网站</span>
+        <span class="value">www.91cailie.com</span>
+      </span>
+      <span class="arrow">›</span>
+    </a>
+    <a class="row" href="tel:13926559077">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M15.5 21c-8 0-12.5-4.5-12.5-12.5V6a2 2 0 0 1 2-2h2.5l2 4-2 1.5c1 2 2.5 3.5 4.5 4.5l1.5-2 4 2V19a2 2 0 0 1-2 2z"/></svg></span>
+      <span>
+        <span class="label">电话联系</span>
+        <span class="value">139 2655 9077</span>
+      </span>
+      <span class="arrow">›</span>
+    </a>
+  </nav>
+
+  <div class="stats">
+    <div class="stat"><b>2008</b><span>创立于深圳</span></div>
+    <div class="stat"><b>5万+</b><span>成功就业</span></div>
+    <div class="stat"><b>2万+</b><span>高薪就业</span></div>
+    <div class="stat"><b>20家</b><span>实训分公司</span></div>
+  </div>
+
+  <section class="card">
+    <h2>个人简介</h2>
+    <p><strong>李俊伟</strong>，深圳才猎天下人力资源服务有限公司创始人兼总经理。公司 2008 年创立于深圳，从猎头服务起步，逐步建成<strong>“先有岗位、再育人才”</strong>的 AI 大数据与 AIGC 人才实训就业基地。</p>
+    <p>他主张把就业保障写进合同——保学会、保就业、保底薪、保二年服务，条款具备法律效力；课程按企业真实用人缺口设计，学员在银行报表、电商数仓、商业视觉等真实项目中完成交付，拒绝包装简历。</p>
+    <p>自创立以来，才猎天下累计帮助 5 万余名技术与管理人才走上更高薪岗位，其中 2 万余名大学生实现高薪就业；总部设于深圳，并在广州、北京、珠海、杭州等地布局实训基地，与阿里、字节、小米、大疆、平安等上千家企业保持人才合作。</p>
+    <div class="tags">
+      <span class="tag">AI 人才实训</span>
+      <span class="tag">猎头服务</span>
+      <span class="tag">AIGC</span>
+      <span class="tag">就业保障</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>公司简介</h2>
+    <figure class="figure">
+      <img src="assets/hero.jpg" alt="才猎天下">
+      <figcaption class="cap">深圳 · AI 大数据与 AIGC 人才实训就业基地</figcaption>
+    </figure>
+    <p>才猎天下 2008 年创立于深圳，以猎聘起家、定向实训，先有企业岗位需求、再面向社会定向招生，让每一条实训赛道直通真实用人缺口，累计帮助 5 万多名技术与管理人才走上更高薪的岗位。</p>
+    <p>四大实训营覆盖 AI 大数据工程师、AIGC 全链路、AI 大模型开发与 AI 漫剧，周期 40 至 70 余天；全封闭高强度集训，上午理论、下午实操、晚上复盘，三天一测试、六天一考试，配备专属助教一对一跟踪，毕业两年内可免费复训答疑。</p>
+
+    <div class="pillar">
+      <h3>AI 大数据工程师实训营 · 40-50 天</h3>
+      <p>Oracle、Hadoop、Flink、Python 全栈数仓技术，对标银行与电商真实项目。</p>
+    </div>
+    <div class="pillar">
+      <h3>AIGC 全链路实训营 · 50 天</h3>
+      <p>Stable Diffusion、ComfyUI、商业视觉与短视频全流程，零基础直入 AI 视觉赛道。</p>
+    </div>
+    <div class="pillar">
+      <h3>AI 大模型开发实训营 · 70 余天</h3>
+      <p>LangChain、RAG、Agent 多智能体到大模型微调，对接大模型应用与 AI 架构岗位。</p>
+    </div>
+    <div class="pillar">
+      <h3>AI 漫剧大师班 · 45 天</h3>
+      <p>从剧本到成片的 AI 漫剧全流程，覆盖 40 余款行业主流工具。</p>
+    </div>
+
+    <div class="grid">
+      <figure class="figure">
+        <img src="assets/scene-aigc.jpg" alt="AIGC 实训课堂">
+        <figcaption class="cap">AIGC 短视频剪辑实训课堂</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="assets/scene-code.jpg" alt="AI 大数据编程实训课堂">
+        <figcaption class="cap">AI 大数据编程实训课堂</figcaption>
+      </figure>
+    </div>
+
+    <div class="services">
+      <div class="service"><i></i>企业猎聘与人才输送</div>
+      <div class="service"><i></i>AI 大数据工程师实训</div>
+      <div class="service"><i></i>AIGC 全链路实训</div>
+      <div class="service"><i></i>AI 大模型开发实训</div>
+      <div class="service"><i></i>AI 漫剧实训</div>
+      <div class="service"><i></i>就业保障与复训答疑</div>
+    </div>
+
+    <div class="note">四保服务写进合同：保学会、保就业、保底薪、保二年服务，深圳人社局认可，可申请国家职业技能技术培训补贴。</div>
+  </section>
+
+  <div class="foot">深圳才猎天下人力资源服务有限公司 · 深圳 · 全国 20 家实训分公司</div>
+</div>
+
+<footer class="bottom">
+  <a class="btn btn-ghost" href="https://www.91cailie.com/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.6 3 15 0 18M12 3c-3 3.6-3 15 0 18"/></svg>
+    官网直达
+  </a>
+  <a class="btn btn-main" href="lijunwei.vcf" download="李俊伟.vcf">
+    <svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+    保存联系人
+  </a>
+</footer>
+</body>
+</html>
